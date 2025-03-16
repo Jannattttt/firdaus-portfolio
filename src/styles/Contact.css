@@ -1,0 +1,120 @@
+.contact {
+    padding: var(--spacing-20) 0;
+    background-color: var(--background);
+  }
+  
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-8);
+  }
+  
+  .contact-info {
+    background-color: var(--primary);
+    color: white;
+    padding: var(--spacing-8);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-info h3 {
+    font-size: var(--font-2xl);
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .contact-info p {
+    margin-bottom: var(--spacing-6);
+  }
+  
+  .contact-details {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+  }
+  
+  .social-links {
+    margin-top: var(--spacing-6);
+    display: flex;
+    gap: var(--spacing-3);
+  }
+  
+  .contact-form {
+    background-color: var(--card);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 10px var(--shadow);
+  }
+  
+  .contact-form h3 {
+    font-size: var(--font-2xl);
+    margin-bottom: var(--spacing-6);
+    color: var(--foreground);
+  }
+  
+  .form-group {
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: var(--spacing-2);
+    color: var(--foreground);
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: var(--spacing-3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: inherit;
+    font-size: var(--font-md);
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+  
+  .submit-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    background-color: var(--primary);
+    color: white;
+    padding: var(--spacing-3) var(--spacing-6);
+    border: none;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  @media (max-width: 992px) {
+    .contact-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-info {
+      margin-bottom: var(--spacing-6);
+    }
+  }
+  
+  

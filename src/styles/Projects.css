@@ -1,0 +1,113 @@
+.projects {
+    padding: var(--spacing-20) 0;
+    background-color: var(--muted);
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-8);
+  }
+  
+  .project-card {
+    background-color: var(--card);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--shadow);
+  }
+  
+  .project-image {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-card:hover .project-image img {
+    transform: scale(1.05);
+  }
+  
+  .project-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover .project-links {
+    opacity: 1;
+  }
+  
+  .project-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: var(--foreground);
+    border-radius: var(--radius-full);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .project-links a:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+  
+  .project-info {
+    padding: var(--spacing-6);
+  }
+  
+  .project-info h3 {
+    font-size: var(--font-xl);
+    margin-bottom: var(--spacing-2);
+    color: var(--foreground);
+  }
+  
+  .project-info p {
+    color: var(--muted-foreground);
+    margin-bottom: var(--spacing-4);
+  }
+  
+  .project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-2);
+  }
+  
+  .tech-tag {
+    background-color: var(--muted);
+    color: var(--foreground);
+    padding: var(--spacing-1) var(--spacing-3);
+    border-radius: var(--radius-full);
+    font-size: var(--font-xs);
+  }
+  
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
