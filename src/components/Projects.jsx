@@ -1,17 +1,26 @@
 import { Github, ExternalLink } from "lucide-react"
 import "../styles/Projects.css"
 import image1 from "../assets/portfolio1.jpg"
+import image2 from "../assets/landing-page.jpg"
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description:
-        "A full-featured e-commerce platform with product listings, cart functionality, and checkout process.",
-      image: "/placeholder.svg?height=600&width=800",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "Portfolio Website",
+      description: "A personal portfolio website showcasing projects and skills (this website).",
+      image: image1,
+      technologies: ["React", "Vite", "CSS"],
       githubUrl: "https://github.com/Jannattttt",
-      liveUrl: "https://example.com",
+      liveUrl: "https://jannattttt.github.io/firdaus-portfolio/",
+    },
+    {
+      title: "A Landing Page",
+      description:
+        "A Real Estate Agency Landing page.",
+      image: image2,
+      technologies: ["React", "Vite", "CSS"],
+      githubUrl: "https://github.com/Jannattttt",
+      liveUrl: "https://jannattttt.github.io/real-estates/",
     },
     {
       title: "Task Management App",
@@ -28,14 +37,6 @@ const Projects = () => {
       technologies: ["JavaScript", "Weather API", "CSS", "HTML"],
       githubUrl: "https://github.com/Jannattttt",
       liveUrl: "https://example.com",
-    },
-    {
-      title: "Portfolio Website",
-      description: "A personal portfolio website showcasing projects and skills (this website).",
-      image: image1,
-      technologies: ["React", "Vite", "CSS"],
-      githubUrl: "https://github.com/Jannattttt",
-      liveUrl: "https://jannattttt.github.io/firdaus-portfolio/",
     },
   ]
 
