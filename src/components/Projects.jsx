@@ -22,7 +22,7 @@ const Projects = () => {
       githubUrl: "https://github.com/Jannattttt",
       liveUrl: "https://jannattttt.github.io/real-estates/",
     },
-    {
+    /* {
       title: "Task Management App",
       description: "A productivity app that helps users organize tasks, set deadlines, and track progress.",
       image: "/placeholder.svg?height=600&width=800",
@@ -37,7 +37,7 @@ const Projects = () => {
       technologies: ["JavaScript", "Weather API", "CSS", "HTML"],
       githubUrl: "https://github.com/Jannattttt",
       liveUrl: "https://example.com",
-    },
+    }, */
   ]
 
   return (
