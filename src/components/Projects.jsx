@@ -22,6 +22,15 @@ const Projects = () => {
       githubUrl: "https://github.com/Jannattttt",
       liveUrl: "https://jannattttt.github.io/real-estates/",
     },
+    {
+      title: "A Finance Dashboard",
+      description:
+        "A finance dashboard that help individuals track their personal finances effortlessly.",
+      image: image2,
+      technologies: ["ONOING PROJECT", "React", "Vite", "CSS"],
+      githubUrl: "https://github.com/Jannattttt",
+      liveUrl: "https://jannattttt.github.io/finance-dashboard/",
+    },
     /* {
       title: "Task Management App",
       description: "A productivity app that helps users organize tasks, set deadlines, and track progress.",
