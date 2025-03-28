@@ -2,6 +2,7 @@ import { Github, ExternalLink } from "lucide-react"
 import "../styles/Projects.css"
 import image1 from "../assets/portfolio1.jpg"
 import image2 from "../assets/landing-page.jpg"
+import image3 from "../assets/dashboard.jpg"
 
 const Projects = () => {
   const projects = [
@@ -26,7 +27,7 @@ const Projects = () => {
       title: "A Finance Dashboard",
       description:
         "A finance dashboard that help individuals track their personal finances effortlessly.",
-      image: image2,
+      image: image3,
       technologies: ["ONOING PROJECT", "React", "Vite", "CSS"],
       githubUrl: "https://github.com/Jannattttt",
       liveUrl: "https://jannattttt.github.io/finance-dashboard/",
